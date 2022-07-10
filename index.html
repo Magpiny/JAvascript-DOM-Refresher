@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 101</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets//icons/logo2.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+       
+        <h1>MAGPINY <span>BO</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#dom">Projects</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Tutorials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main class="container">
+    
+
+        <article class="articles">
+            <h2>Coding Is fun !! </h2>
+            <article>
+                <p contenteditable="true" spellcheck="true"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Obcaecati reprehenderit consequuntur deserunt adipisci pariatur
+                    iste doloribus quo aliquam, ullam libero, incidunt fuga est
+                    architecto ad dolorem mollitia nihil enim nemo? 
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Obcaecati eaque sit itaque culpa enim tempora eveniet 
+                    voluptates corrupti, consequuntur, quaerat, laborum expedita. 
+                    Facilis, iure odit? Assumenda labore similique nisi corrupti.
+                </p>
+            </article>
+
+            <article>
+                <details>
+                    <summary>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Qui perspiciatis error corporis sunt. Unde enim at eaque 
+                        quod, magnam rem repudiandae molestiae provident quaerat 
+                        esse consequuntur autem asperiores! Quos, suscipit!
+                    </summary>
+                    Oh my!
+                </details>
+            </article>
+
+            <article class="dom">
+                <h1 title="Random Quote Generator" id="dom">Random Quote Generator</h1>
+
+                <div class="card">
+                    <p id="quote" title="quotes">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        At delectus maxime officiis quidem tenetur eaque voluptas! Ea, esse dolore earum, 
+                        nam quam, rerum quo ipsum ratione harum consequatur culpa eligendi?
+                    </p>
+
+
+                    <h3 id="qAuthor">Magpiny BO 1948</h3>
+
+                    <button id="qbtn" title="Generate a New Quote">New Quote</button>
+
+                </div>
+
+            </article>
+
+            <article class="modal">
+                <h1 class="h-modal">Modal Toggle</h1>
+            
+
+                
+                <div class="sth" id="modal-content" >
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Voluptate, laboriosam reiciendis doloremque saepe cupiditate 
+                    debitis aspernatur, sint soluta explicabo, aperiam alias aut 
+                    ab vero. Quidem nisi illum quia odio nihil!
+
+                  </p>
+                  <button id="close-modal" title="close modal?">&timesb;</button> 
+                </div>
+
+                <button id="open-modal">
+                    <p>Our model</p>
+                </button>
+            </article>
+
+            <!-- Project number three -->
+            <article class="accordion">
+                <h1>Accordion: Frequently Asked Questions </h1>
+                <div class="accordion-body">
+                    <h3 class="question">1: How did you become so good at programming?</h3>
+                    <p class="answer">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Veniam cumque omnis reprehenderit molestiae tempora 
+                        perspiciatis distinctio tempore autem voluptates, eius 
+                        explicabo vel, quisquam, repudiandae inventore quidem 
+                        perferendis necessitatibus enim quaerat?
+                    </p>
+                </div>
+
+                <div class="accordion-body">
+                    <h3 class="question">2: How did you become so good at programming?</h3>
+                    <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Veniam cumque omnis reprehenderit molestiae tempora 
+                        perspiciatis distinctio tempore autem voluptates, eius 
+                        explicabo vel, quisquam, repudiandae inventore quidem 
+                        perferendis necessitatibus enim quaerat?
+                    </p>
+                </div>
+
+                <div class="accordion-body">
+                    <h3 class="question">3: How did you become so good at programming?</h3>
+                    <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Veniam cumque omnis reprehenderit molestiae tempora 
+                        perspiciatis distinctio tempore autem voluptates, eius 
+                        explicabo vel, quisquam, repudiandae inventore quidem 
+                        perferendis necessitatibus enim quaerat?
+                    </p>
+                </div>
+
+                <div class="accordion-body">
+                    <h3 class="question">4: How did you become so good at programming?</h3>
+                    <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Veniam cumque omnis reprehenderit molestiae tempora 
+                        perspiciatis distinctio tempore autem voluptates, eius 
+                        explicabo vel, quisquam, repudiandae inventore quidem 
+                        perferendis necessitatibus enim quaerat?
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="watch-container">
+                <h1 style="text-decoration: underline;">#4 App: Stop Watch</h1>
+                <div class="stop-watch">
+                    <span class="hour"> </span>:
+                    <span class="minutes"> </span>:
+                    <span class="seconds"></span>
+                </div>
+                <div class="controls">
+                    <span class="pause-stop">▶</span>
+                    <span class="reset">🗘</span>
+                </div>
+
+            </article>
+
+            <article class="todo-list">
+                <h1>#5 App: TODO List App</h1><br />
+                <div class="todo-container">
+                    <label for="todo">Add New TODO: 
+                        <input type="text" name="" id="todo-input">
+                        <button id="todo-button">Add Task</button>
+                    </label>
+                    <p id="error-success-msg"></p>
+                    <div class="todo-items" id="todo-items">
+                        <h2 style="text-decoration: underline; padding-bottom: 1.25rem;"> My Tasks</h2>
+                        <ol></ol>
+                    </div>
+                </div>
+            </article>
+        </article> 
+        <aside>
+
+              
+            <p contenteditable spellcheck="true">
+             
+
+                <strong>Aside</strong>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Officiis laborum harum sequi laboriosam accusantium reiciendis 
+                quam impedit, ex, velit pariatur cum voluptate commodi explicabo 
+                ipsam dolores nemo illum, magnam enim.
+            </p>
+        </aside>
+    </main>
+
+
+  
+    <footer>Hello footer</footer>
+<script src="./js/app.js" defer></script>
+</body>
+</html>

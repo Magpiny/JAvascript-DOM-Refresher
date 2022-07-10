@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 8fr .5fr;
+    grid-template-areas: "header" "main" "footer";
+    font-family: 'Yeseva One', cursive;
+}
+
+header{
+    display: flex;
+    flex-wrap: row wrap;
+    background-color: grey;
+    justify-content: baseline;
+    
+}
+
+
+@keyframes skew {
+    0% {
+      transform: skew(30deg, 30deg);
+    }
+    100% {
+      transform: skew(-30deg, -30deg);
+    }
+  }
+
+@keyframes rotation{
+    0%{
+        color: black;
+        font-size: large;
+    }
+
+    25%{
+        color: white;
+    }
+
+    75%{
+        color: red;
+    
+    }
+
+
+    100%{
+        color: green;
+    }
+}
+
+header>h1>span{
+    animation: rotation 10s infinite;
+    
+}
+
+article>h2{
+    transform: skew(55deg, -52deg);
+    background-color: rgb(255, 106, 0);
+    color: #aed21f;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    display: flex;
+    width: 25%;
+    /* animation: skew 3s infinite; */
+}
+
+header>h1{
+    padding-left: 5rem;
+    font-family: 'Playball', cursive;
+    font-weight: bolder;
+    font-size: 500%;
+}
+
+ul, nav{
+    display: flex;
+    justify-content: flex-end;
+    place-content: flex-end;
+    flex-direction: row;
+}
+nav{
+    justify-content: flex-end;
+    padding-left: 50rem;
+   
+
+}
+ul{
+    list-style: none;
+}
+li{
+    padding-left: 3rem;
+}
+
+li>a{
+    text-decoration: none;
+    font-size: x-large;
+    color:wheat
+}
+
+aside{
+    background-color: bisque;
+    padding: 2rem;
+    font-size: xx-large;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: max-content;
+    grid-gap: 1rem;
+    grid-template-areas: "article aside";
+}
+
+.articles{
+    background-color: aqua;
+    font-size: x-large;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+#dom::before{
+    content: "#1 App: ";
+}
+
+.dom{
+    margin-top: 2rem;
+    background-color: beige;
+    color: blueviolet;
+    padding: 3rem;
+    font-size: larger;
+    margin-left: 3rem;
+    border-left-color: #111114;
+    border-left-width: 1.2rem;
+    border-left-style: outset;
+    font-family: 'Playball', cursive;
+}
+
+.card{
+    display: flex;
+    background-color: #feea0d;
+    font: bold;
+    font-family: 'Yeseva One', cursive;
+    font-size: x-large;
+    padding: 3rem;
+    width: 70%;
+    max-height: fit-content;
+    border-left-style: double;
+    border-left-width: 1.2rem;
+    border-left-color: blueviolet;
+    border-top-left-radius: 10%;
+
+    border-bottom-right-radius: 10%;
+    place-content: center;
+}
+
+button{
+    margin-left: 1rem;
+    padding: 0.6rem;
+}
+
+#qAuthor{
+    padding: 1.2rem;
+}
+
+/*######################################################################################
+    ModalStyles 
+
+  ######################################################################################
+ */
+.modal{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    background-color: beige;
+    color: blueviolet;
+    padding: 3rem;
+    font-size: larger;
+    margin-left: 3rem;
+    border-left-color: #d21fb1;
+    border-left-width: 1.2rem;
+    border-left-style: outset;
+    font-family: 'Playball', cursive;
+
+
+}
+.h-modal{
+    text-decoration: underline;
+}
+
+.h-modal::before{
+    content: "#2 App: ";
+
+}
+
+#open-modal{
+    width: 40%;
+    padding-top: 1rem;
+    outline: none;
+    border: none;
+    background-color: #be93e6;
+    border-radius: 5%;
+    box-shadow: -1 1 3 #be93e6;
+
+}
+
+#open-modal:focus{
+    cursor: pointer;
+    outline: none;
+   
+
+}
+
+#open-modal:hover{
+    background-color: white;
+    color: black;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#modal-content{
+    display: none;
+    justify-content: space-around;
+    left: 50%;
+    
+}
+#modal-content>p{
+    
+    padding: 2.2rem;
+    border-style: double;
+    border-left-width: 2rem;
+    border-left-color: aqua;
+    border-top: none;
+    visibility: none;
+}
+
+#close-modal{
+    display: flex;
+    justify-content: flex-end;
+    font-size: xx-large;
+    color:  white;
+    background-color: red;
+    border-color: red;
+    border-radius: 20%;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.2rem;
+    
+}
+
+#close-modal:hover{
+    cursor: pointer;
+    font-size: 150%;
+    color: white;
+    padding: 0.4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(3px,3px);
+}
+
+
+/* 
+    ######################################################################
+
+    Project Number three: Accordion
+    #####################################################################
+ */
+
+ .accordion{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    background-color: beige;
+    color: blueviolet;
+    padding: 3rem;
+    font-size: larger;
+    margin-left: 3rem;
+    border-left-color: #0de640;
+    border-left-width: 1.2rem;
+    border-left-style: outset;
+    font-family: 'Playball', cursive;
+
+}
+
+.accordion>h1::before{
+    content: "#3 App: ";
+}
+
+.accordion>h1{
+    text-decoration: underline;
+}
+
+.accordion .accordion-body>h3::after{
+    content:" +";
+    position: absolute;
+    right: -1rem;
+}
+
+.accordion .accordion-body .question{
+    padding: 1rem 3rem;
+    border-bottom: 2px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+.accordion .accordion-body .answer{
+    font-size: larger;
+    padding-top: 1.2rem;
+    font-kerning: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    height: 0rem;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.accordion .accordion-body.active .answer{
+    height:8rem;
+    transition: .8s;
+} 
+
+.accordion .accordion-body.active .question{
+  font-size: 18pt;
+  transition: .5s;
+}
+
+.accordion .accordion-body.active .question::after{
+    content: '-';
+    font-size: 2.5rem;
+    transition: .5s;
+  }
+
+  /* #########################################################################################
+
+        #3 App: Stop Watch Styles
+
+     ########################################################################################
+   */
+
+   .watch-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    background-color: beige;
+    color: blueviolet;
+    padding: 3rem;
+    font-size: larger;
+    margin-left: 3rem;
+    border-left-color: hsl(247, 86%, 51%);
+    border-left-width: 1.2rem;
+    border-left-style: outset;
+    font-family: 'Playball', cursive;
+}
+
+.stopwatch .controls{
+    position: relative;
+}
+
+
+.stop-watch{
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 4rem;
+    padding: 1.8rem;
+    font-size: 230%;
+    background-color: rgb(245, 245, 189);
+    box-shadow: 3px 3px 5px bisque;
+    text-align: center;
+   
+    border-top-left-radius: 1.2rem;
+    border-left-color: #0de640;
+    border-left-width: 2rem;
+    border-left-style: double;
+    z-index: 1;
+    opacity: 1;
+   
+}
+
+.controls{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.8rem;
+    font-size: larger;
+    background-color: bisque;
+    box-shadow: inset -3px -3px 5px  #f2f283;
+    place-items: center;
+
+    border-left-color: blueviolet;
+    border-left-width: 2rem;
+    border-left-style: double;
+
+    z-index: 1;
+    opacity: 1;
+    
+}
+
+.pause-stop{
+    background-color: green;
+    padding: 1.2rem;
+    border-radius: 50%;
+    color: white;
+    border: 4px solid blueviolet;
+}
+
+.reset{
+    background-color: red;
+    padding: 1.2rem;
+    border-radius: 50%;
+    color: white;
+    border: 4px solid violet;
+}
+
+.pause-stop:hover {
+    font-size: 120%;
+    cursor: pointer;
+}
+.reset:hover{
+    font-size: 120%;
+    cursor: pointer;
+}
+
+
+
+/*##########################################################
+
+    #5 App: TODOLIST App Styles
+
+  ################################################################
+*/
+.todo-list{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    background-color: beige;
+    color: blueviolet;
+    padding: 3rem;
+    font-size: larger;
+    margin-left: 3rem;
+    border-left-color: hwb(331 9% 7%);
+    border-left-width: 1.2rem;
+    border-left-style: outset;
+    font-family: 'Playball', cursive;
+}
+
+.todo-list>h1{
+    text-decoration: underline;
+    color: hwb(331 9% 7%);
+}
+
+.todo-container{
+    width : 60%;
+    margin : 0 auto;
+    color: hwb(331 9% 7%);
+}
+
+#todo-button{
+    width: 7rem;
+    height: 2rem;
+    padding: .3rem;
+    border: none;
+    background-color:rgb(16, 239, 16);
+    color:hwb(331 9% 7%);
+    font-weight: bolder;
+    font-size: large;
+}
+#todo-button:hover{
+    cursor: pointer;
+    
+}
+
+#todo-input{
+    padding: 1.1rem;
+    width: 40%;
+    border-radius: 1.2rem;
+    border-top: none;
+
+    box-shadow: 5px 5px 8px gray;
+    z-index: 3;
+}
+ol{
+    display: block;
+}
+
+.tasks{
+    display: flex;
+    width: fit-content;
+    padding: 2rem;
+    background-color: white;
+    color: #111114e9;
+    font-family: 'Yeseva One', cursive;
+    margin-top: 1.4rem;
+
+    border-right-color: #0de640;
+    border-right-width: 1.5rem;
+    border-right-style: dashed;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+
+    box-shadow: 5px 5px 8px hwb(331 9% 7%), -5px -5px 8px gray;
+    z-index: 1;
+}
+
+label{
+    display: inline-flex;
+}
+
+.delete-task{
+    background-color: #fcf8f8;
+    color: red;
+    border-radius: 50%;
+    font-size: large;
+    margin-left: 2rem;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10rem;
+}
+
+.delete-task:hover{
+    cursor: pointer;
+    background-color: rgb(213, 34, 67);
+    color: white;
+    font-size: large;
+}
+
+.check-task{
+    cursor: pointer;
+    
+    background-color: #f9f7f4;
+    color: green;
+    font-weight: heavy;
+    font-size: larger;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10rem;
+}
+
+.check-task:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: green;
+    font-size: larger;
+}
+
+
+footer{
+    background-color: grey;
+}
+
